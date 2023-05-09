@@ -12,6 +12,11 @@
  //   }
     </script>
     <script type="module">
+	    import {loadGLTF, loadAudio, loadVideo} from "./libs/loader.js";
+const THREE = window.MINDAR.IMAGE.THREE;
+
+document.addEventListener('DOMContentLoaded', () => {
+  const start = async() => {
       import * as THREE from 'three';
       import { MindARThree } from 'mindar-image-three';
       //initiate AR object
